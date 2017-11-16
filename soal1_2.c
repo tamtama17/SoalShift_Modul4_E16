@@ -40,3 +40,8 @@ int isForbiddenExtension (const char *path) {
     return !strcmp ("pdf", ext) || !strcmp ("doc", ext) || !strcmp ("txt", ext);
 }
 
+
+
+int main (int argc, char **argv) {
+    return fuse_main (argc, argv, &my_fuse, NULL);
+}
