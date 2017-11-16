@@ -1,0 +1,19 @@
+// soal 1-2
+sudo umount test
+gcc -Wall soal12.c -o soal12 `pkg-config fuse --libs --cflags`
+./soal12 test
+cd /home/ronald/Documents
+sudo rm -rf r*
+touch rr.txt
+cd /home/ronald/Documents/sisop/modul4/test/home/ronald/Documents
+nano rr.txt
+
+// soal 3-4
+sudo umount test
+gcc -Wall soal34.c -o soal34 `pkg-config fuse --libs --cflags`
+./soal34 test
+cd /home/ronald/Downloads
+sudo rm -rf s*
+touch ss.txt
+cd /home/ronald/Documents/sisop/modul4/test/home/ronald/Downloads
+nano ss.txt
