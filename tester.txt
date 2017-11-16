@@ -17,3 +17,18 @@ sudo rm -rf s*
 touch ss.txt
 cd /home/ronald/Documents/sisop/modul4/test/home/ronald/Downloads
 nano ss.txt
+
+// soal 1-2-3-4
+sudo umount test
+gcc -Wall soal1234.c -o soal1234 `pkg-config fuse --libs --cflags`
+./soal1234 test
+cd /home/ronald/Documents
+sudo rm -rf r*
+touch rr.txt
+cd /home/ronald/Documents/sisop/modul4/test/home/ronald/Documents
+nano rr.txt
+cd /home/ronald/Downloads
+sudo rm -rf s*
+touch ss.txt
+cd /home/ronald/Documents/sisop/modul4/test/home/ronald/Downloads
+nano ss.txt
