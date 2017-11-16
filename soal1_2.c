@@ -40,6 +40,14 @@ int isForbiddenExtension (const char *path) {
     return !strcmp ("pdf", ext) || !strcmp ("doc", ext) || !strcmp ("txt", ext);
 }
 
+int parse (char* perms) {
+    int bits = 0;
+    for (int i = 0; i < 9; i++)
+        if (perms[i] != '-')
+            bits |= (1 << (8-i));
+    return bits;
+}
+
 static int do_getattr (const char *path, struct stat *stbuf) {
     int res;
 
